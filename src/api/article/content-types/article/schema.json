@@ -38,7 +38,8 @@
         "shared.media",
         "shared.quote",
         "shared.rich-text",
-        "shared.image-text"
+        "shared.image-text",
+        "shared.cta-box"
       ]
     }
   }

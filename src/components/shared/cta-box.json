@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_shared_cta_boxes",
+  "info": {
+    "displayName": "CTA Box"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "button_text": {
+      "type": "string"
+    },
+    "button_link": {
+      "type": "string"
+    },
+    "background_color": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

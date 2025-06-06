@@ -386,7 +386,13 @@ export interface ApiArticleArticle extends Struct.CollectionTypeSchema {
   };
   attributes: {
     blocks: Schema.Attribute.DynamicZone<
-      ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.image-text']
+      [
+        'shared.media',
+        'shared.quote',
+        'shared.rich-text',
+        'shared.image-text',
+        'shared.cta-box',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

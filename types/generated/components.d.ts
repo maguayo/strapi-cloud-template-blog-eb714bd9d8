@@ -16,6 +16,20 @@ export interface SharedAlert extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCtaBox extends Struct.ComponentSchema {
+  collectionName: 'components_shared_cta_boxes';
+  info: {
+    displayName: 'CTA Box';
+  };
+  attributes: {
+    background_color: Schema.Attribute.String;
+    button_link: Schema.Attribute.String;
+    button_text: Schema.Attribute.String;
+    content: Schema.Attribute.RichText;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SharedImageText extends Struct.ComponentSchema {
   collectionName: 'components_shared_image_texts';
   info: {
@@ -96,6 +110,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.alert': SharedAlert;
+      'shared.cta-box': SharedCtaBox;
       'shared.image-text': SharedImageText;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
